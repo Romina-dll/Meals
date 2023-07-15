@@ -4,9 +4,10 @@ import 'package:meals2/data/dummy_data.dart';
 import 'package:meals2/screens/categories.dart';
 import 'package:meals2/screens/meals.dart';
 import 'package:meals2/screens/tabs.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 void main() {
-  runApp( App());
+  runApp(ProviderScope(child: App()));
 }
 
 final theme = ThemeData(
